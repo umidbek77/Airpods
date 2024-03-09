@@ -1,0 +1,334 @@
+@import url(./font.css);
+
+/* veriables */
+:root {
+    --background: #151515;
+    --light: #fff;
+    --headerColor: #282828;
+    --MB: Montserrat-Bold;
+    --MM: Montserrat-Medium;
+    --PO: ProstoOne-Regular;
+}
+
+/* General styles */
+body {
+    background-color: var(--background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1150px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.phone-content,
+.footer-content{
+    gap: 30px;
+    justify-content: center;
+
+}
+.footer-content{
+    flex-wrap: wrap;
+}
+
+/* header start */
+.page-header {
+    padding-block: 6px;
+    background-color: var(--headerColor);
+}
+
+.header-nav,
+.footer-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.user-links {
+    display: flex;
+    column-gap: 30px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+
+.header-nav_link,
+.footer-nav_link {
+    color: var(--light);
+    font-family: var(--MB);
+    font-size: 20px;
+}
+
+.user-action {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.user-action_link {
+    width: 100%;
+    height: auto;
+}
+
+.header-nav_link:hover {
+    color: var(--orange);
+    background-color: var(--light);
+}
+
+
+/* main start */
+.banner {
+    width: 100%;
+    height: 635px;
+    flex-shrink: 0;
+    background-image: url(../images/card-1\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 38px;
+
+}
+
+.banner-title {
+    color: var(--light);
+    font-family: var(--PO);
+    font-size: 100px;
+    line-height: 75px;
+    text-transform: capitalize;
+}
+
+.banner-link {
+    background-color: var(--light);
+    padding: 13px 18px 13px 14px;
+    color: #171718;
+    font-family: var(--MM);
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+}
+
+.products {
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    column-gap: 30px;
+}
+
+.product-img-one{
+    max-width: 552px;
+    width: 100%;
+}
+.product-image-two{
+    max-width: 457px;
+    width: 100%;
+}
+.row-desc {
+    max-width: 538px;
+    color: var(--light);
+    font-family: var(--MM);
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.mt-2 {
+    margin-top: 33px;
+}
+.align-center{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-2 {
+    display: flex;
+    column-gap: 30px;
+}
+
+.row-desc-2 {
+    display: flex;
+    align-items: center;
+    max-width: 538px;
+    color: var(--light);
+    font-family: var(--MM);
+    font-size: 22px;
+    font-weight: 500
+}
+
+.position {
+    margin-block: 50px 79px;
+}
+
+.content-position {
+    display: flex;
+    align-items: center;
+    column-gap: 88px;
+}
+
+.left-side-text,
+.right-side-text {
+    color: var(--light);
+    text-align: left;
+    font-family: var(--MB);
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.left-side-text {
+    text-align: right;
+}
+
+.position-image {
+    width: 268px;
+    position: relative;
+
+}
+
+.position-image::before,
+.position-image::after {
+    content: "";
+    width: 61px;
+    height: 1px;
+    background: #c4c4c4;
+    position: absolute;
+}
+
+.position-image::before {
+    top: 50%;
+    left: -75px;
+}
+
+.position-image::after {
+    top: 50%;
+    right: -75px;
+}
+
+.phone-card {
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 255px;
+    border-radius: 6px;
+    padding: 15px;
+    transition: 0.4s;
+}
+.phone-card:hover{
+    transform: scale(1.1);
+}
+
+.phone-card_title {
+    color: #000;
+    font-family: var(--MB);
+    font-size: 20px;
+}
+
+.phone-card_img {
+    width: max-content;
+}
+
+.phone-card_price {
+    color: #000;
+    font-family: var(--MM);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.phone-card_btn {
+    background-color: var(--background);
+    color: var(--light);
+    padding: 7px 57px;
+    transition: 0.4s;
+    border: 1px solid var(--background);
+}
+
+.phone-card_btn:hover {
+    background-color: var(--light);
+    color: var(--background);
+    cursor: pointer;
+    border: 1px solid var(--background);
+}
+
+.page-footer {
+    margin-top: 55px;
+    padding-block: 81px;
+    background-color: var(--headerColor);
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-logo_icon {
+    width: 100%;
+}
+
+.payments {
+    column-gap: 30px;
+}
+
+.burger-menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    display: none;
+}
+
+.burger-menu div{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    align-self: center;
+    position: relative;
+}
+
+.burger-menu div::before{
+    content :"";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+}
+.burger-menu div::after{
+content: "";
+width: 100%;
+height: 100%;
+background-color: #fff;
+position: absolute;
+bottom: -10px;
+}
